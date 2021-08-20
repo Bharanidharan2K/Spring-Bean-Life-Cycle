@@ -28,7 +28,7 @@ public class StudentDAO {
 		this.password = password;
 	}
 
-	@PostConstruct
+	//@PostConstruct
 	public void createDBConnection() throws Exception {
 		// createDBConnection();
 		Class.forName(driver);
@@ -57,7 +57,7 @@ public class StudentDAO {
 		System.out.println("Record Deleted Successfully..!");
 	}
 
-	@PreDestroy
+	//@PreDestroy
 	public void closeDBConnection() throws Exception {
 		//Closing the DB Connection
 		System.out.println("Inside destroy..!");
